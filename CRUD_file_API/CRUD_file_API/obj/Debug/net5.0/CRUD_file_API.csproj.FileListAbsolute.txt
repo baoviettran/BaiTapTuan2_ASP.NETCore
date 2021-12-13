@@ -26,3 +26,4 @@ C:\Workspace\C#\BaiTapTuan2_ASP.NETCore\CRUD_file_API\CRUD_file_API\obj\Debug\ne
 C:\Workspace\C#\BaiTapTuan2_ASP.NETCore\CRUD_file_API\CRUD_file_API\obj\Debug\net5.0\ref\CRUD_file_API.dll
 C:\Workspace\C#\BaiTapTuan2_ASP.NETCore\CRUD_file_API\CRUD_file_API\obj\Debug\net5.0\CRUD_file_API.pdb
 C:\Workspace\C#\BaiTapTuan2_ASP.NETCore\CRUD_file_API\CRUD_file_API\obj\Debug\net5.0\CRUD_file_API.genruntimeconfig.cache
+C:\Workspace\C#\BaiTapTuan2_ASP.NETCore\CRUD_file_API\CRUD_file_API\bin\Debug\net5.0\data\students.json

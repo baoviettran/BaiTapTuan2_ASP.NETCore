@@ -1,0 +1,7 @@
+{"ID":"1","Name":"Senpaii","Gender":"Male","Class":"CT3A"}
+{"ID":"2","Name":"Bobby","Gender":"Male","Class":"DT1B"}
+{"ID":"3","Name":"Sakiro","Gender":"Female","Class":"AT15C"}
+{"ID":"4","Name":"Yuragi","Gender":"Male","Class":"OG"}
+{"ID":"5","Name":"Yantoro","Gender":"Female","Class":"Team Spirit"}
+{"ID":"6","Name":"BaoViet","Gender":"Male","Class":"AT15A"}
+{"ID":"7","Name":"NguyenVc","Gender":"Male","Class":"AT15A"}
