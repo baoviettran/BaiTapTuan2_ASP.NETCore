@@ -33,10 +33,10 @@ namespace TestAPI2.Controllers
             return studentList;
         }
 
-        [HttpGet("getbyid/{studentId}/{name}")]
-        public Student GetById([FromRoute] string studentId, [FromRoute] string name)
+        [HttpGet("getbyid/{studentId:int}")]
+        public Student GetById([FromRoute] int studentId)
         {
-            Student student = studentList.Find(x => x.ID == studentId && x.Name == name);
+            Student student = studentList.Find(x => x.ID == studentId);
             if (student == null)
             {
                 return null;
@@ -44,8 +44,8 @@ namespace TestAPI2.Controllers
             return student;
         }
 
-        [HttpGet("getbyanobject/{id}/{name}/{gender}/{class}")]
-        public Student GetByAnObject([FromRoute] Student studentEntity)
+        [HttpPost("getbyanobject")]
+        public Student GetByAnObject([FromBody] Student studentEntity)
         {
             var student = studentList.Find(x => x.ID == studentEntity.ID && x.Name == studentEntity.Name
             && x.Gender == studentEntity.Gender && x.Class == studentEntity.Class);
@@ -61,7 +61,7 @@ namespace TestAPI2.Controllers
         {
             var student = new Student();
             var maxId = studentList.Max(x => x.ID);
-            student.ID = (Convert.ToInt32(maxId) + 1).ToString();
+            student.ID = maxId + 1;
             student.Name = studentDto.Name;
             student.Gender = studentDto.Gender;
             student.Class = studentDto.Class;
@@ -76,8 +76,8 @@ namespace TestAPI2.Controllers
             return studentList;
         }
 
-        [HttpPut("put/{studentId}")]
-        public List<Student> Put(string studentId, [FromBody] StudentDTO studentDto)
+        [HttpPut("put/{studentId:int}")]
+        public List<Student> Put(int studentId, [FromBody] StudentDTO studentDto)
         {
             var student = studentList.Find(x => x.ID == studentId);
             if (student == null)
@@ -100,8 +100,8 @@ namespace TestAPI2.Controllers
             return studentList;
         }
 
-        [HttpDelete("delete/{id}")]
-        public List<Student> Delete(string id)
+        [HttpDelete("delete/{id:int}")]
+        public List<Student> Delete(int id)
         {
             var student = studentList.Find(x => x.ID == id);
             if (student == null)
